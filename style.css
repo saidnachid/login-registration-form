@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Teachers", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+img,
+span,
+i,
+data {
+  display: block;
+}
+
+img {
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: oldlace;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-field input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+.input-field i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #b4b4b4;
+}
+
+.input-field i:first-child {
+  left: 12px;
+}
+
+.email-field input,
+.user-field input {
+  padding-left: 40px;
+}
+
+.password-field input {
+  padding: 15px 40px;
+}
+
+.password-field i:last-child {
+  right: 12px;
+  cursor: pointer;
+}
+
+.error-message {
+  margin-top: 5px;
+  color: red;
+  display: none;
+}
+
+.submit-btn {
+  padding-block: 20px;
+  background-color: #68a1eb;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: large;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #5a92da;
+}
+
+.input-field input:focus {
+  border-color: #68a1eb;
+}
+
+.input-field input.error {
+  border-color: #da3838;
+}
+.input-field input.success {
+  border-color: #17c917;
+}
+
+p {
+  text-align: center;
+  font-weight: 500;
+}
+p a {
+  display: inline-block;
+  color: #68a1eb;
+  transition: color 0.2s;
+}
+
+p a:hover {
+  color: #5a92da;
+}
+
+label {
+  display: flex;
+  gap: 10px;
+}
+
+.login-form {
+  display: none;
+}

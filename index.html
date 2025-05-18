@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form with Validation</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <form class="signup-form">
+      <h2 class="title">Create account</h2>
+      <div class="input-wrapper">
+        <div class="input-field user-field">
+          <i class="ri-user-line"></i>
+          <input type="text" placeholder="Your Name" />
+        </div>
+        <span class="error-message"></span>
+      </div>
+      <div class="input-wrapper">
+        <div class="input-field email-field">
+          <i class="ri-mail-line"></i>
+          <input type="text" placeholder="Your Email" />
+        </div>
+        <span class="error-message"></span>
+      </div>
+      <div class="input-wrapper">
+        <div class="input-field password-field">
+          <i class="ri-lock-line"></i>
+          <input type="password" placeholder="Enter Your Password" />
+          <i class="ri-eye-close-line toggler"></i>
+        </div>
+        <span class="error-message"></span>
+      </div>
+      <button type="submit" class="submit-btn">Create Account</button>
+      <p>Already have an account? <a href="#" id="signup-link">Log In</a></p>
+    </form>
+
+    <form class="login-form">
+      <h2 class="title">Log In</h2>
+      <div class="input-wrapper">
+        <div class="input-field email-field">
+          <i class="ri-mail-line"></i>
+          <input type="text" placeholder="Your Email" />
+        </div>
+        <span class="error-message"></span>
+      </div>
+      <div class="input-wrapper">
+        <div class="input-field password-field">
+          <i class="ri-lock-line"></i>
+          <input type="password" placeholder="Enter Your Password" />
+          <i class="ri-eye-close-line toggler"></i>
+        </div>
+        <span class="error-message"></span>
+      </div>
+      <label for="check">
+        <input type="checkbox" id="check" />
+        <span>Keep me logged in</span>
+      </label>
+      <button type="submit" class="submit-btn">Log In</button>
+      <p>Don't have an account? <a href="#" id="login-link">Sign Up</a></p>
+    </form>
+    <script src="index.js" defer></script>
+  </body>
+</html>
